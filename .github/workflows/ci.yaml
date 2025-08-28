@@ -12,6 +12,8 @@ jobs:
   build:
     name: Build & Test FastAPI app
     runs-on: ubuntu-latest
+    env:
+      POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
 
     steps:
       - name: Checkout Code
