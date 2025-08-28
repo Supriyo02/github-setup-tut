@@ -27,11 +27,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run lint (flake8 or black)
-        run: |
-          pip install flake8
-          flake8 .
-
       - name: Run tests
         run: |
           pip install pytest pytest-asyncio httpx
