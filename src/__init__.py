@@ -21,3 +21,6 @@ app = FastAPI(
 
 
 app.include_router(book_router, prefix="/api", tags=["books"])
+@app.get("/")
+def health_check():
+    return {"status": "ok"}
