@@ -46,7 +46,7 @@ jobs:
 
       - name: Set DATABASE_URL environment variable
         run: |
-          echo "DATABASE_URL=postgresql://test:test@localhost:5432/test_db" >> $GITHUB_ENV
+          echo "POSTGRES_URL=postgresql://test:test@localhost:5432/test_db" >> $GITHUB_ENV
 
       - name: Set PYTHONPATH
         run: |
