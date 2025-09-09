@@ -7,5 +7,5 @@ os.environ["DATABASE_URL"] = os.getenv("DATABASE_URL", "postgresql://test:test@l
 client = TestClient(app)
 
 def test_root_endpoint():
-    response = client.get("/health")
+    response = client.get("/")
     assert response.status_code == 200
